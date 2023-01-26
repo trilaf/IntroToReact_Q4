@@ -1,0 +1,243 @@
+[debug] [2023-01-26T09:35:37.359Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:35:37.363Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase init
+[debug] [2023-01-26T09:35:37.364Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:35:37.364Z] Platform:      linux
+[debug] [2023-01-26T09:35:37.365Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:35:37.365Z] Time:          Thu Jan 26 2023 16:35:37 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:35:37.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:35:37.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T09:35:37.379Z] > authorizing via signed-in user (trilukman41@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/faris/Windows/Projects/IntroToReact_Q4
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-26T09:36:43.579Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-26T09:36:43.581Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"trilaf-foodary","name":"trilaf-foodary"}
+[debug] [2023-01-26T09:36:45.817Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-01-26T09:36:45.817Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9092119493748233422"}
+[debug] [2023-01-26T09:36:45.821Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9092119493748233422 [none]
+[debug] [2023-01-26T09:36:47.160Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9092119493748233422 200
+[debug] [2023-01-26T09:36:47.160Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9092119493748233422 {"name":"operations/cp.9092119493748233422","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-01-26T09:36:47.195Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/index.js:36:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-01-26T09:39:54.477Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:39:54.484Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase init
+[debug] [2023-01-26T09:39:54.486Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:39:54.487Z] Platform:      linux
+[debug] [2023-01-26T09:39:54.487Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:39:54.488Z] Time:          Thu Jan 26 2023 16:39:54 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:39:54.488Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:39:54.514Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T09:39:54.516Z] > authorizing via signed-in user (trilukman41@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/faris/Windows/Projects/IntroToReact_Q4
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-26T09:40:16.448Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-26T09:40:16.451Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"trilaf-foodary","name":"trilaf-foodary"}
+[debug] [2023-01-26T09:40:18.319Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-01-26T09:40:18.319Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7787413750384248328"}
+[debug] [2023-01-26T09:40:18.323Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7787413750384248328 [none]
+[debug] [2023-01-26T09:40:19.641Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7787413750384248328 200
+[debug] [2023-01-26T09:40:19.642Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7787413750384248328 {"name":"operations/cp.7787413750384248328","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-01-26T09:40:19.652Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/index.js:36:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-01-26T09:42:23.567Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:42:23.571Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase init
+[debug] [2023-01-26T09:42:23.572Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:42:23.572Z] Platform:      linux
+[debug] [2023-01-26T09:42:23.572Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:42:23.573Z] Time:          Thu Jan 26 2023 16:42:23 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:42:23.573Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:42:23.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T09:42:23.587Z] > authorizing via signed-in user (trilukman41@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/faris/Windows/Projects/IntroToReact_Q4
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-26T09:42:49.184Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:42:49.189Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase init
+[debug] [2023-01-26T09:42:49.191Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:42:49.191Z] Platform:      linux
+[debug] [2023-01-26T09:42:49.191Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:42:49.191Z] Time:          Thu Jan 26 2023 16:42:49 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:42:49.192Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:42:49.217Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T09:42:49.218Z] > authorizing via signed-in user (trilukman41@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/faris/Windows/Projects/IntroToReact_Q4
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-26T09:43:19.572Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-26T09:43:19.573Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"trilaf-foodary","name":"trilaf-foodary"}
+[debug] [2023-01-26T09:43:21.622Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-01-26T09:43:21.623Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5916149943750615381"}
+[debug] [2023-01-26T09:43:21.626Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5916149943750615381 [none]
+[debug] [2023-01-26T09:43:23.224Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5916149943750615381 200
+[debug] [2023-01-26T09:43:23.226Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5916149943750615381 {"name":"operations/cp.5916149943750615381","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-01-26T09:43:23.240Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/index.js:36:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-01-26T09:46:27.179Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:46:27.184Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase init
+[debug] [2023-01-26T09:46:27.192Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:46:27.193Z] Platform:      linux
+[debug] [2023-01-26T09:46:27.193Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:46:27.193Z] Time:          Thu Jan 26 2023 16:46:27 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:46:27.193Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:46:27.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T09:46:27.210Z] > authorizing via signed-in user (trilukman41@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/faris/Windows/Projects/IntroToReact_Q4
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-26T09:46:46.428Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-26T09:46:46.430Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"trilaf-foodary","name":"trilaf-foodary"}
+[debug] [2023-01-26T09:46:48.387Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-01-26T09:46:48.387Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.6084875593327957207"}
+[debug] [2023-01-26T09:46:48.395Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6084875593327957207 [none]
+[debug] [2023-01-26T09:46:49.699Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6084875593327957207 200
+[debug] [2023-01-26T09:46:49.700Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6084875593327957207 {"name":"operations/cp.6084875593327957207","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":8,"message":"The project cannot be created because you have exceeded your allotted project quota.","details":[{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"description":"The project cannot be created because you have exceeded your allotted project quota."}]}]}}
+[debug] [2023-01-26T09:46:49.715Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.poll (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async createCloudProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:186:29)
+    at async createFirebaseProjectAndLog (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/management/projects.js:45:9)
+    at async promptAndCreateNewProject (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async doSetup (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/faris/.nvm/versions/node/v19.2.0/lib/node_modules/firebase-tools/lib/init/index.js:36:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-01-26T09:46:59.375Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T09:46:59.379Z] Command:       /home/faris/.nvm/versions/node/v19.2.0/bin/node /home/faris/.nvm/versions/node/v19.2.0/bin/firebase logout
+[debug] [2023-01-26T09:46:59.381Z] CLI Version:   11.21.0
+[debug] [2023-01-26T09:46:59.381Z] Platform:      linux
+[debug] [2023-01-26T09:46:59.381Z] Node Version:  v19.2.0
+[debug] [2023-01-26T09:46:59.381Z] Time:          Thu Jan 26 2023 16:46:59 GMT+0700 (Western Indonesia Time)
+[debug] [2023-01-26T09:46:59.382Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T09:46:59.624Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0gbiEBgVTehbfCgYIARAAGBASNwF-L9IrFLaND8RCfPnrbgGCM0-f33edoomOB75cDsUhuiMVfsO0GxFlmAmiHbP6VwtSRyeaSkA
+[debug] [2023-01-26T09:47:00.157Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
